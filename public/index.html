@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download and Flip Video</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <main id="app" class="container">
+        <h1>Tải và lật video</h1>
+        <div class="card">
+            <h2>Tải video tiktok ko logo <b>tiktok</b></h2>
+            <form id="form">
+                <input type="url" name="url" id="url" placeholder="paste the link of the tiktok video...">
+                <input type="submit" id="submit" class="btn-submit" value="GENERATE">
+            </form>
+            <div id="content" class="content">
+                <div id="videoContainer">
+                    <video id="video" controls></video>
+                </div>
+              
+
+            </div>
+            <div style="text-align: center; display: none;" id="loading">Loading...</div>
+        </div>
+        <button class="btn-submit" id="downloadButton">Download Video</button>
+        <div id="fileName"></div>
+    </main>
+        <script src="js/app.js" type="module"></script>
+
+</body>
+</html>
